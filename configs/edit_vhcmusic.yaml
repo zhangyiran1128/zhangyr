@@ -1,0 +1,6 @@
+input:
+  checkpoint: outputs/checkpoints/diffusion/seed_16/best.pt
+editing:
+  edit_strength: 0.5
+  ddim_steps: 50
+  max_rounds: 3

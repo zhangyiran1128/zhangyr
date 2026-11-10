@@ -1,0 +1,92 @@
+{
+  "structure": [
+    {
+      "section": "intro",
+      "start_bar": 1,
+      "end_bar": 4,
+      "energy": 0.45,
+      "tension": 0.3,
+      "repeat_group": "intro_theme",
+      "transition_to_next": "release"
+    }
+  ],
+  "syntax": [
+    {
+      "bar_id": 1,
+      "chord": "C:maj",
+      "harmonic_func": "I",
+      "syncopation": 0.3,
+      "groove_type": "straight",
+      "thickness": 0.45,
+      "cadence_strength": 0.2,
+      "density": 0.45,
+      "active_roles": ["lead", "bass", "harmony_pad"]
+    },
+    {
+      "bar_id": 2,
+      "chord": "G:maj",
+      "harmonic_func": "V",
+      "syncopation": 0.35,
+      "groove_type": "straight",
+      "thickness": 0.5,
+      "cadence_strength": 0.2,
+      "density": 0.5,
+      "active_roles": ["lead", "bass", "harmony_pad"]
+    },
+    {
+      "bar_id": 3,
+      "chord": "A:min",
+      "harmonic_func": "vi",
+      "syncopation": 0.4,
+      "groove_type": "pop_drive",
+      "thickness": 0.65,
+      "cadence_strength": 0.2,
+      "density": 0.65,
+      "active_roles": ["lead", "bass", "rhythm", "harmony_pad"]
+    },
+    {
+      "bar_id": 4,
+      "chord": "F:maj",
+      "harmonic_func": "IV",
+      "syncopation": 0.35,
+      "groove_type": "pop_drive",
+      "thickness": 0.6,
+      "cadence_strength": 0.8,
+      "density": 0.6,
+      "active_roles": ["lead", "bass", "rhythm", "harmony_pad"]
+    }
+  ],
+  "constraints": [
+    {"bar_id": 1, "track_role": "lead", "editable": true, "target_density": 0.45, "target_activity": 1.0, "target_register": "mid_high", "boundary_smoothness": 0.6},
+    {"bar_id": 1, "track_role": "bass", "editable": true, "target_density": 0.35, "target_activity": 1.0, "target_register": "low", "boundary_smoothness": 0.6},
+    {"bar_id": 1, "track_role": "rhythm", "editable": true, "target_density": 0.1, "target_activity": 0.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 1, "track_role": "harmony_pad", "editable": true, "target_density": 0.45, "target_activity": 1.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 1, "track_role": "accompaniment", "editable": true, "target_density": 0.1, "target_activity": 0.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 1, "track_role": "drums", "editable": true, "target_density": 0.1, "target_activity": 0.0, "target_register": "wide", "boundary_smoothness": 0.6},
+    {"bar_id": 2, "track_role": "lead", "editable": true, "target_density": 0.5, "target_activity": 1.0, "target_register": "mid_high", "boundary_smoothness": 0.6},
+    {"bar_id": 2, "track_role": "bass", "editable": true, "target_density": 0.4, "target_activity": 1.0, "target_register": "low", "boundary_smoothness": 0.6},
+    {"bar_id": 2, "track_role": "rhythm", "editable": true, "target_density": 0.1, "target_activity": 0.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 2, "track_role": "harmony_pad", "editable": true, "target_density": 0.5, "target_activity": 1.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 2, "track_role": "accompaniment", "editable": true, "target_density": 0.1, "target_activity": 0.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 2, "track_role": "drums", "editable": true, "target_density": 0.1, "target_activity": 0.0, "target_register": "wide", "boundary_smoothness": 0.6},
+    {"bar_id": 3, "track_role": "lead", "editable": true, "target_density": 0.65, "target_activity": 1.0, "target_register": "mid_high", "boundary_smoothness": 0.6},
+    {"bar_id": 3, "track_role": "bass", "editable": true, "target_density": 0.55, "target_activity": 1.0, "target_register": "low", "boundary_smoothness": 0.6},
+    {"bar_id": 3, "track_role": "rhythm", "editable": true, "target_density": 0.65, "target_activity": 1.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 3, "track_role": "harmony_pad", "editable": true, "target_density": 0.65, "target_activity": 1.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 3, "track_role": "accompaniment", "editable": true, "target_density": 0.2, "target_activity": 0.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 3, "track_role": "drums", "editable": true, "target_density": 0.2, "target_activity": 0.0, "target_register": "wide", "boundary_smoothness": 0.6},
+    {"bar_id": 4, "track_role": "lead", "editable": true, "target_density": 0.6, "target_activity": 1.0, "target_register": "mid_high", "boundary_smoothness": 0.6},
+    {"bar_id": 4, "track_role": "bass", "editable": true, "target_density": 0.5, "target_activity": 1.0, "target_register": "low", "boundary_smoothness": 0.6},
+    {"bar_id": 4, "track_role": "rhythm", "editable": true, "target_density": 0.6, "target_activity": 1.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 4, "track_role": "harmony_pad", "editable": true, "target_density": 0.6, "target_activity": 1.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 4, "track_role": "accompaniment", "editable": true, "target_density": 0.2, "target_activity": 0.0, "target_register": "mid", "boundary_smoothness": 0.6},
+    {"bar_id": 4, "track_role": "drums", "editable": true, "target_density": 0.2, "target_activity": 0.0, "target_register": "wide", "boundary_smoothness": 0.6}
+  ],
+  "global_constraints": {
+    "keep_structure": true,
+    "keep_chord_progression": true,
+    "keep_main_motif": true,
+    "keep_rhythm_pattern": false,
+    "allow_arrangement_change": false
+  }
+}

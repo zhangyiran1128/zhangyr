@@ -1,0 +1,49 @@
+project:
+  name: VHCMusic
+  output_dir: outputs/train
+  seed: 16
+  seeds: [16, 2026, 789]
+
+data:
+  processed_dir: data/processed
+  split: train
+  num_workers: 4
+  max_bars: 64
+  subdivisions: 16
+  pitch_min: 21
+  pitch_max: 108
+  roles: [lead, bass, rhythm, harmony_pad, accompaniment, drums]
+
+autoencoder:
+  latent_dim: 512
+  hidden_dim: 1024
+  lr: 0.0001
+  batch_size: 16
+  epochs: 80
+  checkpoint: outputs/checkpoints/autoencoder.pt
+
+diffusion:
+  steps: 1000
+  sampling_steps: 100
+  beta_schedule: cosine
+  prediction_type: epsilon
+  model_dim: 512
+  num_layers: 6
+  ff_dim: 2048
+  num_heads: 8
+  dropout: 0.1
+  conditional_dropout: 0.1
+  classifier_free_guidance: 1.5
+  cross_track_attention: true
+  lr: 0.0001
+  weight_decay: 0.01
+  batch_size: 16
+  epochs: 200
+  grad_clip: 1.0
+  amp: true
+  ema_decay: 0.999
+  resume: null
+  checkpoint_dir: outputs/checkpoints/diffusion
+
+device:
+  prefer_cuda: true

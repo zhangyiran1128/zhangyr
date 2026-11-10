@@ -1,0 +1,13 @@
+schema_version: 1
+allowed_sections: [intro, verse, pre_chorus, chorus, bridge, breakdown, outro, instrumental, interlude]
+allowed_transitions: [none, build, release, fill, cut, riser, cadence, smooth_lift, build_up, contrast, stop]
+allowed_harmonic_functions: [I, ii, iii, IV, V, vi, vii_dim, tonic, predominant, dominant, passing, modal, other]
+allowed_grooves: [straight, pop_drive, ballad, funk, rock, half_time, four_on_floor, latin, sparse, syncopated, dance, cinematic]
+allowed_roles: [lead, bass, rhythm, harmony_pad, accompaniment, drums]
+allowed_registers: [low, mid_low, mid, mid_high, high, wide]
+global_constraints:
+  keep_structure: true
+  keep_chord_progression: true
+  keep_main_motif: true
+  keep_rhythm_pattern: false
+  allow_arrangement_change: false

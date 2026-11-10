@@ -1,0 +1,15 @@
+data:
+  test_tasks: data/processed/tasks/test_tasks.jsonl
+  outputs: outputs/generated/final_outputs.jsonl
+  calibration: outputs/eval/calibration.json
+render_config: configs/render.yaml
+quality:
+  fad:
+    checkpoint_dir: outputs/checkpoints/metrics
+  clap:
+    checkpoint: outputs/checkpoints/metrics/music_audioset_epoch_15_esc_90.14.pt
+  imagebind:
+    checkpoint: outputs/checkpoints/metrics/imagebind_huge.pth
+output:
+  dir: outputs/eval
+  tables: outputs/eval/tables

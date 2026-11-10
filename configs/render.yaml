@@ -1,0 +1,13 @@
+render:
+  sample_rate: 44100
+  fluidsynth_bin: fluidsynth
+  gain: 0.7
+  final_name: Music.wav
+  normalize_lufs: -14.0
+  roles_to_gm_program:
+    lead: 80
+    bass: 33
+    rhythm: 25
+    harmony_pad: 89
+    accompaniment: 1
+    drums: 0

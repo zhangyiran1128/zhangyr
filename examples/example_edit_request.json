@@ -1,0 +1,14 @@
+{
+  "target_bars": [17, 24],
+  "target_track_role": "drums",
+  "target_density": 0.85,
+  "target_activity": 1.0,
+  "target_register": "wide",
+  "global_constraints": {
+    "keep_structure": true,
+    "keep_chord_progression": true,
+    "keep_main_motif": true,
+    "keep_rhythm_pattern": false,
+    "allow_arrangement_change": false
+  }
+}
